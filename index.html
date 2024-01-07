@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+
+<body>
+  <main class="contenedor">
+    <div class="contenedor___fechas">
+
+
+      <div class="fecha__input">
+        <form action="#" class="form" id="dateForm">
+          <div class="day">
+            <label for="day" class="label-day">DAY</label>
+            <input type="number" id="day" name="form__day" placeholder="DD" class="day__placeholder" min="1" max="31" required >
+            <p class="error__text" id="dayError">This field is required</p>
+            <p class="day__error" id="day__error">Must be a valid day</p>
+          </div>
+
+          <div class="month">
+            <label for="month" class="label-month">MONTH</label>
+            <input type="number" id="month" name="form__month" placeholder="MM" class="month__placeholder" min="1" max="12" required>
+            <p class="error__text" id="monthError">This field is required</p>
+            <p class="month__error" id="month__error">Must be a valid month</p>
+          </div>
+
+
+          <div class="year">
+            <label for="year" class="label-year">YEAR</label>
+            <input type="number" id="year" name="form__year" placeholder="YYYY" class="year__placeholder" required >
+            <p class="error__text" id="yearError">This field is required</p>
+            <p class="year__error" id="year__error">Must be a valid year</p>
+          </div>
+        </form>
+
+
+
+      </div>
+
+    </div>
+    <img src="./assets/images/icon-arrow.svg" alt="arrow" class="icon__star" id="svgArrow">
+
+    <div class="contenedor__fecha__formula">
+      <div class="fecha__formula">
+        <div class="year__formula">
+          <span id="AnoContainer" class="result-container">--</span> years
+
+        </div>
+
+        <div class="month__formula">
+        <span id="MesContainer" class="result-container">--</span> months
+        </div>
+
+        <div class="day__formula">
+          <span id="DiaContainer" class="result-container">--</span> days
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+</body>
+<script src="./script.js"></script>
+</html>

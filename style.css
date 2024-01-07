@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 86%);
+}
+
+main {
+    background-color: white;
+    width: 81vh;
+    height: 60vh;
+    display: grid;
+    margin: 5rem auto auto auto;
+    border-radius: 15px 15px 130px 15px ;
+    padding: 2rem;
+    align-items: center;
+    
+}
+
+.contenedor___fechas {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    border-bottom: 0.1rem hsl(0, 0%, 86%) inset ;
+    cursor: pointer;
+}
+
+.contenedor___fechas .icon__star{
+    align-self:center;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.55rem;
+    letter-spacing: 0.3ch;
+    width: 8rem;
+    font-weight: 700;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.55rem;
+    letter-spacing: 0.3ch;
+    width: 8rem;
+    font-weight: 700;
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.55rem;
+    letter-spacing: 0.3ch;
+    width: 8rem;
+    font-weight: 700;
+}
+
+.day__placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.month__placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.year__placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+
+.form {
+    display: flex;
+}
+
+.fecha__input{
+    display: block;
+}
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contenedor__fecha__formula {
+    display: flex;
+    flex-direction: column;
+}
+
+.fecha__formula {
+    margin-top: auto;
+}
+
+.icon__star {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    margin-top: -2rem;
+    margin-left: 27.5rem;
+    transition: all 0.6s linear;
+}
+
+.year__formula {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: -1.5rem;
+}
+
+.month__formula {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: -1.5rem;
+}
+
+.day__formula {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1rem;
+    margin-right: -2rem;
+    font-variant-numeric: tabular-nums;
+    transition: all 0.6s linear;
+}
+
+.error-border-day {
+    border: 2px solid red;
+
+}
+
+.error-border-month {
+    border: 2px solid red;
+}
+.error-border-year  {
+    border: 2px solid red;
+}
+
+.label-day-error{
+    color: red;
+}
+
+.label-month-error{
+    color: red;
+}
+
+.label-year-error{
+    color: red;
+}
+
+#dayError {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+
+}
+
+#monthError {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+
+}
+
+#yearError {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+
+}
+
+#day__error {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+}
+
+#month__error {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+}
+
+#year__error {
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    display: none;
+    color: red;
+}
+
+@media (max-width: 578px ) {
+    main {
+        width: 60vh;
+        transition: all 0.2s linear;
+    }
+    .icon__star {
+        margin: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        margin-bottom: 1rem;
+        transition: all 0.2s linear;
+        margin-top: -2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    main {
+        width: 45vh;
+        height: 65vh;
+    }
+
+    .year__formula {
+        font-size: 3rem;
+    }
+
+    .day__formula {
+        font-size: 3rem;
+    }
+
+    .month__formula {
+        font-size: 3rem;
+    }
+
+    .icon__star {
+        width: 1rem;
+        height: 1rem;
+        padding: 1rem;
+        margin: 7.5rem;
+        margin-top: 7.5rem;
+        margin-bottom: 0rem;
+        transition: all 0.2s linear;
+        margin-top: -5rem;
+
+        }
+
+    .fecha__input {
+        width: 18rem;
+    }
+
+    .year__placeholder {
+        font-size: 1.1rem;
+    }
+
+    .month__placeholder {
+        font-size: 1.1rem;
+    }
+
+    .day__placeholder {
+        font-size: 1.1rem;
+    }
+}
